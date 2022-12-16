@@ -1,0 +1,13 @@
+.env agregar datos render
+schema.prisma reemplazar 
+provider = "mysql" por provider = "base da datos a usar"
+
+// crea tablas en bd
+npx prisma migrate dev
+// crear en package.json
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  },
+// pobla la db
+npx prisma db seed
+
